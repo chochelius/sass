@@ -1,0 +1,55 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+// scss-docs-start theme-color-variables 
+$primary: $blue !default; 
+$secondary: $gray-600 !default; 
+$success: $green !default; 
+$info: $cyan !default; 
+$warning: $yellow !default; 
+$danger: $red !default; 
+$light: $gray-100 !default; 
+$dark: $gray-900 !default; 
+$purple: #cf649a; 
+// scss-docs-end theme-color-variables
+
+// SCSS-docs-start theme-colors-map 
+$theme-colors: (
+"primary" : $primary, 
+"secondary": $secondary, 
+"success": $success, 
+"info": $info,
+"warning": $warning, 
+"danger": $danger, 
+"light": $light, 
+"dark": $dark,
+"purple": $purple 
+) !default;
+
+.card {
+    @extend .bg-dark;
+    @extend .text-light;
+}
+
+.img-thumbnail {
+    @extend .bg-dark
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url(/assets/font/KaushanScript-Regular.ttf) format('truetype');
+}
+
+.card-text {
+    font-family: 'Kaushan Script';
+    src: url(/assets/font/KaushanScript-Regular.ttf) format('truetype');
+}
+
+.btn {
+    @extend .text-light;
+    @extend .card-text;
+
+}
+
+.purple {
+    background-color: #cf649a;
+}
