@@ -25,6 +25,10 @@ $theme-colors: (
 "purple": $purple 
 ) !default;
 
+$thumbnail-border-color: (
+    "border": none,
+) !default;
+
 .card {
     @extend .bg-dark;
     @extend .text-light;
@@ -47,7 +51,7 @@ $theme-colors: (
 .btn {
     @extend .text-light;
     @extend .card-text;
-
+    @extend .purple;
 }
 
 .purple {
